@@ -11,26 +11,35 @@
 
 (function(jQuery) {
 	
-	for(var i=0;i<50;i++){
-		function randomNumber(thisNumber,compare){
+	for(var i=0;i<100;i++){
+		/*function randomNumber(thisNumber,compare){
 			var thisNumber = Math.floor(Math.random()*100);
 			while(thisNumber<compare){
 				thisNumber=Math.floor(Math.random()*100);
 			}
-		}
-		/*var randWidth = Math.floor(Math.random()*100);
-		while(randWidth<84){
+		}*/
+		var randWidth = Math.floor(Math.random()*10);
+		while(randWidth<30){
 			randWidth=Math.floor(Math.random()*100);
-		}
+		};
 		var randHeight = Math.floor(Math.random()*100);
 		while(randHeight<19){
 			randHeight=Math.floor(Math.random()*100);
 		}
-		var randSize  = Math.floor(Math.random()*100);
-		while(randSize<10){
-			randSize=Math.floor(Math.random()*100);
+		var randSize  = Math.floor(Math.random()*10);
+		/*while(randSize<0){
+			randSize=Math.floor(Math.random()*2);
 		}*/
-		$('#parallax').append('<div style="width:'+randomNumber("randWidth",85)+'%; height:'+randomNumber("randHeight",20)+'%;"><div style="width:'+randomNumber("randSize",20)+'px;height:'+randomNumber("randSize",20)+'px;color:#333;opacity:.4;left:'+randomNumber("randSize",10)+'px;top:'+randomNumber("randSize",10)+'px;"></div></div>')
+		var randLeft  = Math.floor(Math.random()*100);
+		while(randLeft<0){
+			randLeft=Math.floor(Math.random()*100);
+		}
+		var randTop  = Math.floor(Math.random()*100);
+		while(randTop<0){
+			randTop=Math.floor(Math.random()*100);
+		}
+		var randColor = Math.floor(Math.random()*16777215).toString(16);
+		$('#parallax').append('<div style="width:'+randWidth+'%; height:'+randHeight+'%;"><div style="width:'+randSize+'px;height:'+randSize+'px;left:'+randLeft+'%;top:'+randTop+'%;background:#'+randColor+';"></div></div>')
 	}
 
 

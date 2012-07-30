@@ -215,9 +215,6 @@
     <div style="width:42%; height: 90%;">
       <div class="az"></div>
     </div> -->
-
-
-    
   </div>
 </div>
 <script type="text/javascript" src="css_js/jparallax.js"></script>
