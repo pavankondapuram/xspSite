@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+<head>
+<title>XSP &lt;Xtra Sensory Perception /&gt;</title>
+<meta charset="utf-8" />
+<link href="css_js/universal.css" rel="stylesheet" />
+<link href="css_js/coda-slider.css" rel="stylesheet" />
+<link href="images/favIcon.png" rel="shortcut icon" />
+<script src="css_js/jquery1.6.1.js" type="text/javascript"></script>
+<script src="css_js/jquery1.2.js" type="text/javascript"></script>
+<script src="css_js/custom.js" type="text/javascript"></script>
+<script type="text/javascript" src="css_js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="css_js/jquery.coda-slider-2.0.js"></script>
+<script type="text/javascript" src="css_js/jparallax.js"></script>
+</head>
+<body>
+<div class="bgWrap">
+  <div class="header">
+    <div class="xsp"></div>
+    <div class="headCont"><img src="images/logo.png" class="logoPrime" alt="XSP" width="100" />
+      <nav>
+        <div id="coda-nav-1"> <a href="#1" class="overviewB select"> <span class="pop">overview</span> </a> <a href="#2" class="servicesB"> <span class="pop">our services</span> </a> <a href="#3" class="ways"> <span class="pop">our ways</span> </a> <a href="#4" class="about"> <span class="pop">about xsp</span> </a> <a href="#5" class="contact"> <span class="pop">contact us</span> </a> </div>
+      </nav>
+    </div>
+  </div>
+  <br>
+  <div class="wrapperBG"></div>
+  <div class="wrapper">
+    <section id="page-wrap">
+      <div class="slider-wrap">
+        <div id="main-photo-slider" class="csw">
+          <div class="panelContainer coda-slider preload" id="coda-slider-1">
+            <div class="panel">
+              <div class="overview">
+                <div class="banner1"></div>
+                <div class="part">
+                  <h2>Our attribute</h2>
+                  <p>we build pretty things for the web, no matter weather it’s phone or desktop. Our services are widely differentiated from creative services to full scale back end web application. We adroit to simulate your imagination in sophisticated bending of the rules and formulate a plan to meet your business requirement.</p>
+                </div>
+                <div class="part">
+                  <h2>Way we carryout things</h2>
+                  <p>We give greatest degree of Special thought for expression that gives importance to project architecture for the point at which the condition is most favourable for Web Design and Development project. We follow the methods to engage in an inquiry and we assure the satisfaction of our customers to the core.</p>
+                </div>
+                <div class="part">
+                  <h2>About XSP</h2>
+                  <p>XSP
+                    &lt;XtraSensoryPerception&gt;
+                    started as the joint operation between a designer and a developer. To encompass the proper user experience and functionality of any pretty things on the web, both designer and developer plays the major role to combine and build pretty things. Read below to find out more about the two founders, Arjun and Pavan. </p>
+                </div>
+                <div id="coda-nav-1"><a href="#2"></a></div>
+              </div>
+            </div>
+            <div class="panel">
+              <h1>Attribute of our Services</h1>
+              <p> Our characteristics and livelihood are simple, clear and fast. We bring into being intuitive designs and apps, no matter weather it&rsquo;s phone or desktop or other. We have been around the block and are ready to handle what ever you can throw at us.</p>
+              <div class="services">
+                <div class="eachService">
+                  <h2>Mobile</h2>
+                  <div class="mobile"></div>
+                  <ul>
+                    <li>Web application development</li>
+                    <li>Native applications development</li>
+                    <li>Hybrid applications development</li>
+                  </ul>
+                </div>
+                <div class="eachService">
+                  <h2>Computer</h2>
+                  <div class="laptop"></div>
+                  <ul>
+                    <li>Web 2.0 application development</li>
+                    <li>eCommerce application development</li>
+                    <li>Content Management System development</li>
+                    <li>Website development</li>
+                  </ul>
+                </div>
+                <div class="eachService">
+                  <h2>Design &amp; others</h2>
+                  <div class="dataflow"></div>
+                  <ul>
+                    <li>Branding, Marketing, Promotional &amp; designs</li>
+                    <li>Interaction and Data flow designs</li>
+                    <li>Wireframing and Usability test</li>
+                    <li>SQL Tuning &amp; Database design</li>
+                    <li>SEO &amp; Content writting</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <h1>Way we carryout things</h1>
+              <p>We approach and execute every project with acute professionalism. We follow the under mentioned methodology for proper preparation, development, and execution of a project to attain our goals. Here are the steps that we utilize during the execution of any project.</p>
+              <div class="carryOut">
+                <div class="instantiate carryOutImg"></div>
+                <div class="design carryOutImg"></div>
+                <div class="foster carryOutImg"></div>
+                <div class="launch carryOutImg"></div>
+                <div class="review carryOutImg"></div>
+                <div class="clear"></div>
+                <div class="cont">
+                  <h2>Instantiate</h2>
+                  <p>In the beginning stage of chain of development, we work with you and your team to know the actual existence of concepts and abstraction of your objectives and goals. There is lot of communication between us and your team at this stage. Lets rare a share to bring those imaginations into the first stage of its existence.</p>
+                </div>
+                <div class="cont">
+                  <h2> Design</h2>
+                  <p> With the knowledge acquired through the instantiate stage we start the theoretical reviews and construct a plan with concept. At the end of this stage we will be having a clear picture on changing your imagination into real time, fully functional application.</p>
+                </div>
+                <div class="cont">
+                  <h2>Foster </h2>
+                  <p>This is where the attempt starts to build product in real. Your project goes from design phase till actually working module. In this stage all the plans and concepts from the earlier stage will turn into prototype.</p>
+                </div>
+                <div class="cont">
+                  <h2> Launch</h2>
+                  <p> The prototype from foster goes into different stages of testing. Once we are very sure about the product is running very smooth with a error free environment, the product is set to launch. It is the feeling of lively and cheerful joy, as the great effort to endure comes to the condition of bearing fruit and the project comes alive.</p>
+                </div>
+                <div class="cont">
+                  <h2> Review</h2>
+                  <p> Don&rsquo;t guess launch is the final stage of all. Once the product is launched, the application is reviewed and future updates are set in consideration with regard to growth and advancement. We like come into begin and accomplish each project with ascent to rising.</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <h1>About XSP</h1>
+              <p> We are formulated to elite a desired solution to corporate and individual clients. We are leading Web 2.0 firm delivering highly creative, brand-driven and result focused web solution. The Internet and web technology prospect is forever evolving, the demand for high-impact experiences rises to new levels, as we constantly strive to achieve lasting impressions for our clients.</p>
+              <p>XSP was founded in mid 2011 to serve the web and mobile industry. We are ambitions to build applications and frameworks to address gaps in web and mobile application design and development.</p>
+              <div class="founders">
+                <div class="person">
+                  <h3>Arjun A</h3>
+                  <span class="strong">Chief Developer</span>
+                  <p> <img src="images/arjun.png" width="150"></p>
+                  <p>Arjun is a fun loving guy who is interested in designing, programming and playing with RC cars and video games. He has worked on widely admired platforms and the goal is informal for ever: To lead the design of the project into specific attribute and bring it alive with highest level of exact correspondence with fact.</p>
+                  <p>Arjun Specializes in PHP and MySql, HTML 5, Action Script, Javascript and Content Writing. Over the years Arjun has experienced in building simple Content management system to complex E-commerce applications.</p>
+                  <p>Arjun loves to share his knowledge with others and he is always into learning new things. His primary aim is to delivering dignified and graceful solutions and to extend beyond expectations.</p>
+                </div>
+                <div class="person">
+                  <h3>Pavan</h3>
+                  <span class="strong"> Chief Designer</span>
+                  <p><img src="images/pavan.png" width="150"></p>
+                  <p> After working with Oracle, Philips, Trellisys and more firms, Pavan a graduate in Fine arts, specialized in layout designing and Diploma in interface development with experience working on designin and developing User Interfaces for web, mobile web, native mobile, eCommerce and CMS applications started XSP to cater the growing necessity for unique, better and innovative User interfaces. </p>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <h1>Contact us</h1>
+              <div class="contactUs">
+                <div class="needField">
+                  <?php
+
+require_once('admin/config.php');
+include('admin/includes/cu-core-functions.php');
+ 
+?>
+                </div>
+                <div class="unit">
+                  <form action="<?php $_SERVER['PHP_SELF'] ?>" method="GET">
+                    <input class="input" name="name" type="text" value="<?php if(isset($_GET['submit'])) { echo $name; } ?>" autofocus placeholder="Name">
+                    <input class="input" name="number" type="contact_no" value="<?php if(isset($_GET['submit'])) { echo $contact_no; } ?>" placeholder="Contact number">
+                    <input class="input" name="email" type="email" value="<?php if(isset($_GET['submit'])) { echo $email; } ?>" placeholder="eMail">
+                    <textarea class="input" type="textbox" placeholder="Message" style="height:60px;" name="message"><?php if(isset($_GET['submit'])) { echo $message; } ?>
+</textarea>
+                    <input type="hidden" value="1" name="priority" />
+                    <input type="submit" class="button floatR clear clearWidth" name="submit" value="submit">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <div class="copyRight">&copy; Copy Rights reserved - XSP Xtra Sensory Perception</div>
+  </footer>
+  <div id="parallax">
+    <div style="width:90%; height: 80%; left:1%; top:200px;">
+      <div class="a"></div>
+    </div>
+    <div style="width:74%; height: 10%; right:">
+      <div class="b"></div>
+    </div>
+    <div style="width:88%; height: 50%;">
+      <div class="c"></div>
+    </div>
+    <div style="width:96%; height: 30%;">
+      <div class="d"></div>
+    </div>
+    <div style="width:89%; height: 80%;">
+      <div class="e"></div>
+    </div>
+    <div style="width:59%; height: 60%;">
+      <div class="f"></div>
+    </div>
+    <div style="width:87%; height: 30%;">
+      <div class="g"></div>
+    </div>
+    <div style="width:86%; height: 80%;">
+      <div class="h"></div>
+    </div>
+    <div style="width:94%; height: 90%;">
+      <div class="i"></div>
+    </div>
+    <div style="width:72%; height: 40%;">
+      <div class="j"></div>
+    </div>
+    <div style="width:81%; height: 90%;">
+      <div class="k"></div>
+    </div>
+    <div style="width:92%; height: 60%;">
+      <div class="l"></div>
+    </div>
+    <div style="width:63%; height: 70%;">
+      <div class="m"></div>
+    </div>
+    <div style="width:74%; height: 80%;">
+      <div class="n"></div>
+    </div>
+    <div style="width:85%; height: 90%;">
+      <div class="o"></div>
+    </div>
+    <div style="width:96%; height: 80%;">
+      <div class="p"></div>
+    </div>
+    <div style="width:77%; height: 60%;">
+      <div class="q"></div>
+    </div>
+    <div style="width:98%; height: 70%;">
+      <div class="r"></div>
+    </div>
+    <div style="width:89%; height: 90%;">
+      <div class="s"></div>
+    </div>
+    <div style="width:78%; height: 80%;">
+      <div class="t"></div>
+    </div>
+    <div style="width:97%; height: 90%;">
+      <div class="u"></div>
+    </div>
+    <div style="width:86%; height: 90%;">
+      <div class="v"></div>
+    </div>
+    <div style="width:35%; height: 98%;">
+      <div class="w"></div>
+    </div>
+    <div style="width:94%; height: 80%;">
+      <div class="x"></div>
+    </div>
+    <div style="width:73%; height: 70%;">
+      <div class="y"></div>
+    </div>
+    <div style="width:42%; height: 90%;">
+      <div class="z"></div>
+    </div>
+    <div style="width:90%; height: 80%; left:1%; top:200px;">
+      <div class="aa"></div>
+    </div>
+    <div style="width:74%; height: 10%; right:">
+      <div class="ab"></div>
+    </div>
+    <div style="width:88%; height: 50%;">
+      <div class="ac"></div>
+    </div>
+    <div style="width:96%; height: 30%;">
+      <div class="ad"></div>
+    </div>
+    <div style="width:89%; height: 80%;">
+      <div class="ae"></div>
+    </div>
+    <div style="width:59%; height: 60%;">
+      <div class="af"></div>
+    </div>
+    <div style="width:87%; height: 30%;">
+      <div class="ag"></div>
+    </div>
+    <div style="width:86%; height: 80%;">
+      <div class="ah"></div>
+    </div>
+    <div style="width:94%; height: 90%;">
+      <div class="ai"></div>
+    </div>
+    <div style="width:72%; height: 40%;">
+      <div class="aj"></div>
+    </div>
+    <div style="width:81%; height: 90%;">
+      <div class="ak"></div>
+    </div>
+    <div style="width:92%; height: 60%;">
+      <div class="al"></div>
+    </div>
+    <div style="width:63%; height: 70%;">
+      <div class="am"></div>
+    </div>
+    <div style="width:74%; height: 80%;">
+      <div class="an"></div>
+    </div>
+    <div style="width:85%; height: 90%;">
+      <div class="ao"></div>
+    </div>
+    <div style="width:96%; height: 80%;">
+      <div class="ap"></div>
+    </div>
+    <div style="width:77%; height: 60%;">
+      <div class="aq"></div>
+    </div>
+    <div style="width:98%; height: 70%;">
+      <div class="ar"></div>
+    </div>
+    <div style="width:89%; height: 90%;">
+      <div class="as"></div>
+    </div>
+    <div style="width:78%; height: 80%;">
+      <div class="at"></div>
+    </div>
+    <div style="width:97%; height: 90%;">
+      <div class="au"></div>
+    </div>
+    <div style="width:86%; height: 90%;">
+      <div class="av"></div>
+    </div>
+    <div style="width:35%; height: 98%;">
+      <div class="aw"></div>
+    </div>
+    <div style="width:94%; height: 80%;">
+      <div class="ax"></div>
+    </div>
+    <div style="width:73%; height: 70%;">
+      <div class="ay"></div>
+    </div>
+    <div style="width:42%; height: 90%;">
+      <div class="az"></div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

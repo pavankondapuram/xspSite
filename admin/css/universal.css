@@ -1,0 +1,186 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.installerBody {
+	background:url(../images/bgTex.jpg) repeat;
+	font-family:"Courier New", Courier, monospace;
+}
+.wrapper-installer {
+	width:1000px;
+	margin:0 auto;
+}
+.xsp-installer {
+	background:url(../images/sprite.png) no-repeat -432px -55px;
+	height: 56px;
+	width: 124px;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.logo-installer {
+	background:url(../images/sprite.png) no-repeat 0px 0px;
+	height: 275px;
+	width: 408px;
+	margin:70px auto 0;
+}
+.shadow-installer {
+	background:url(../images/sprite.png) no-repeat -388px 0px;
+	height: 44px;
+	margin: -24px auto 0;
+	width: 530px;
+}
+.text-installer {
+	color:#526068;
+	width:100%;
+	text-align:center;
+	font-size:40px;
+	margin:0 auto;
+}
+#installNotes {
+	width:400px;
+	height:225px;
+	margin:10px auto;
+	text-align:left;
+	font-family:"Times New Roman", Times, serif;
+	color:#536068;
+}
+#errorText {
+	height:40px;
+	width:480px;
+	font-size:15px;
+	color:#1785cd;
+	margin:150px auto 0 auto;
+	text-align:center;
+}
+.registration_install {
+	width:450px;
+	margin:10px auto;
+	background-color:#526068;
+	-moz-border-radius:15px; 
+    -webkit-border-radius:15px; 
+	border-radius:15px;
+	-moz-box-shadow:rgba(25,25,25,0.7) 0 4px 10px -1px;
+    -webkit-box-shadow:rgba(25,25,25,0.7) 0 4px 10px -1px;
+    -khtml-box-shadow:rgba(25,25,25,0.7) 0 4px 10px -1px;
+	box-shadow:rgba(25,25,25,0.7) 0 4px 10px -1px;
+}
+#registrationForm_install_height { height:320px; }
+#login_height { height:243px; }
+#rememberPwd_height { height:156px }
+
+#regFormFooter {
+	width:430px;
+	height:70px;
+	margin:0 auto;
+	background-color:#efefef;
+	-moz-border-radius:0 0 5px 5px; 
+    -webkit-border-radius:0 0 5px 5px; 
+	border-radius:0 0 5px 5px;
+}
+#message {
+	height:40px;
+	width:500px;
+	font-size:15px;
+	color:#1785cd;
+	margin:10px auto 10px auto;
+	text-align:center;
+}
+.finishDiv {
+	width:110px;
+	height:40px;
+	margin:15px auto;
+}
+
+.loginBelow_link_block {
+	height:40px;
+	width:400px;
+	margin:10px auto;
+	text-align:right;
+	font-size:14px;
+}
+.loginBelow_link {
+	color:#1785cd;
+	text-decoration:none;
+}
+.loginBelow_link:hover { text-decoration:underline; }
+
+#installButton {
+	width:100px;
+	height:30px;
+	background-color:#55c4c4;
+	-moz-border-radius:25px; 
+   -webkit-border-radius:25px; 
+	border-radius:25px;
+	border:1px solid #526068;
+	float:right;
+}
+#installButton:hover {
+	background-color:#5ed7d7;
+}
+#installButton:active {
+	margin:1px -1px 0 0;
+}
+.registrationForm_install {
+	width:430px;
+	margin:-8px auto;
+	background:url(../images/grains.jpg) repeat;
+}
+#registration_install_height { height:340px; }
+#loginForm_height { height:213px; }
+#rememberPwdForm_height { height:136px; }
+
+#RegTextField {
+	width:285px;
+	height:28px;
+	margin:0 0px 5px 0px;
+	-moz-border-radius:5px; 
+   -webkit-border-radius:5px; 
+	border-radius:5px;
+	border:1px solid #d3dddc;
+	padding-left:10px;
+	background-image:url(../images/bgTextField.jpg);
+}
+.buttonReg {
+	height:35px;
+	float:right;
+	-moz-border-radius:5px; 
+   -webkit-border-radius:5px; 
+	border-radius:5px;
+	border:1px solid #bebebe;
+	background-color:#f7f7f7;
+	margin:18px 25px 0 0;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-weight:bold;
+	color:#434343;
+	-moz-box-shadow:rgba(25,25,25,0.7) 0 4px 10px -1px;
+   -webkit-box-shadow:rgba(25,25,25,0.7) 0 4px 10px -1px;
+   -khtml-box-shadow:rgba(25,25,25,0.7) 0 4px 10px -1px;
+	box-shadow:rgba(25,25,25,0.7) 0 4px 10px -1px;
+}
+
+.buttonReg:hover { background-color:#dbdbdb; }
+.buttonReg:active { background-color:#f7f7f7; margin:19px 24px 0 0; }
+#buttonRegWidth { width:100px; }
+
+#tableReg{
+	margin-top:0px;
+}
+
+#tdRegLabel{
+	width:130px;
+	height:35px;
+	font-weight:bold;
+	font-size:13px;
+	color:#000000;
+	font-family:"Times New Roman", Times, serif;
+	padding-left:10px;
+}
+#tdRegTextField{
+	width:320px;
+	height:35px;
+}

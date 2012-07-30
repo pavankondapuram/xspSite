@@ -1,0 +1,63 @@
+/***************  |||---IMPORTS---|||  *********************/
+@import url('diapo.css');
+/***************  |||---RESET---|||  *********************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+/***************  |||---GLOBAL---|||  *********************/
+body { background:url(images/bgTex.jpg) repeat; font-family:"Courier New", Courier, monospace; }
+.wrapper { width:100%; margin:0 auto; background:url(images/mainBg.jpg) repeat; overflow:hidden; }
+.logoPrime { margin:20px 0 0 20px; }
+.xsp { background:url(images/sprite.png) no-repeat -432px -55px; height: 56px; width: 124px; position:absolute; top:0; left:0; }
+.logo { background:url(images/sprite.png) no-repeat 0px 0px; height: 275px; width: 408px; margin:150px auto 0; }
+.shadow { background:url(images/sprite.png) no-repeat -388px 0px; height: 44px; margin: -24px auto 0; width: 530px; }
+.cs { color:#55c4c4; width:100%; text-align:center; font-size:40px; margin:20px 0 0; }
+.greyT { color:#526068; }
+.footerTop { background: url(images/footer.png) top; padding: 65px 0 0; width:100%; }
+.footCont { position:relative; background:#e8e8e8; border-top:2px solid #000000; height: 299px; margin: 0 -10px; width:100%; position:relative; }
+.copyRight { position:absolute; width:100%; bottom:0; text-align:center; width:100%; color:#333333; bottom:0; text-decoration:underline; font-size:10px; margin:5px 0; position:absolute; }
+/***************  |||---NAVIGATION---|||  *********************/
+nav { float:right; margin:20px 0 0; }
+nav a { float:left; }
+nav ul a { list-style:none; float:left; margin:0 20px 0 0; }
+nav ul a .nav-thumb { width:109px; height:110px; }
+nav .home { background:url(images/sprite.png) no-repeat 1px -402px; height: 110px; width: 109px; cursor:pointer; }
+nav .team { background:url(images/sprite.png) no-repeat 0 -515px; height: 110px; width: 109px; cursor:pointer; }
+nav .contact { background:url(images/sprite.png) no-repeat 0 -630px; height: 110px; width: 109px; cursor:pointer; text-align:center; }
+/***************  |||---CONTENT---|||  *********************/
+.content { height:600px; width:100%; }
+/*
+	Featured Content Slider
+	by: Chris Coyier
+*/
+* { margin: 0; padding: 0; }
+body { font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+/*
+	UTILITY STYLES
+*/				  				  
+					  				  
+.floatLeft { float: left; margin-right: 10px; }
+.floatRight { float: right; }
+.clear { clear: both; }
+a { outline: none; }
+/*
+	TYPOGRAPHY
+*/
+ul { list-style: square inside; }
+a, a:visited { color: #729dff; text-decoration: none; }
+a:hover, a:active { color: white; }
+blockquote { padding: 0 20px; margin-left: 20px; border-left: 20px solid #ccc; font-size: 14px; font-family: Georgia, serif; font-style: italic; margin-top: 10px; }
+/*
+	SLIDER
+*/
+.slider-wrap { float:l; position: absolute; top: 87px; left: 40px; }
+.stripViewer .panelContainer .panel ul { text-align: left; margin: 0 15px 0 30px; }
+.stripViewer { width: 100%; }
+.stripViewer .panelContainer { position: relative; left: 0; top: 0; }
+.stripViewer .panelContainer .panel { float: left; width:33.3%; }
+.stripNavL, .stripNavR, .stripNav { display: none; }
+#movers-row { margin: -43px 0 0 62px; }
+#movers-row div { width: 20%; float: left; }
+#movers-row div a.cross-link { float: right; }
+.photo-meta-data { background: url(images/transpBlack.png); padding: 10px; height: 30px; margin-top: -50px; position: relative; z-index: 9999; color: white; }
+.photo-meta-data span { font-size: 13px; }
+.cross-link { display: block; }
+.active-thumb { background: transparent url(images/icon-uparrowsmallwhite.png) top center no-repeat; }

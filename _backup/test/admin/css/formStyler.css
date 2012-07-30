@@ -1,0 +1,123 @@
+#installButton {
+	width:100px;
+	height:30px;
+	background-color:#55c4c4;
+	-moz-border-radius:25px; 
+    -webkit-border-radius:25px; 
+	border-radius:25px;
+	border:1px solid #526068;
+	float:right;
+}
+#installButton:hover {
+	background-color:#5ed7d7;
+}
+#installButton:active {
+	margin:1px -1px 0 0;
+}
+#finishButton {
+	width:100px;
+	height:30px;
+	background-color:#55c4c4;
+	-moz-border-radius:25px; 
+    -webkit-border-radius:25px; 
+	border-radius:25px;
+	border:1px solid #526068;
+	float:right;
+	margin:100px 0 0 0;
+}
+#finishButton:hover {
+	background-color:#5ed7d7;
+}
+#finishButton:active {
+	margin:101px -1px 0 0;
+}
+.formReg {
+	background-color:#ffffff;
+	width:490px;
+	margin:5px auto;
+	padding-top:10px;
+	padding-bottom:10px;
+	-moz-border-radius:0 0 10px 10px; 
+    -webkit-border-radius:0 0 10px 10px; 
+	border-radius:0 0 10px 10px;
+	border:5px solid #111111;
+}
+
+#formRegHeight { height:255px; }
+#formLoginHeight {  height:205px; }
+#formRememberPwdHeight { height:118px; }
+
+#RegTextField {
+	width:308px;
+	height:28px;
+	margin:0 0px 5px 0px;
+	-moz-border-radius:5px; 
+    -webkit-border-radius:5px; 
+	border-radius:5px;
+	border:1px solid #d3dddc;
+	padding-left:10px;
+	background-image:url(../images/bgTextField.jpg);
+}
+.buttonReg {
+	height:35px;
+	float:right;
+	-moz-border-radius:5px; 
+    -webkit-border-radius:5px; 
+	border-radius:5px;
+	border:1px solid #bebebe;
+	background-color:#f7f7f7;
+	margin:18px 25px 0 0;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-weight:bold;
+	color:#434343;
+	-moz-box-shadow:rgba(25,25,25,0.7) 0 4px 10px -1px;
+    -webkit-box-shadow:rgba(25,25,25,0.7) 0 4px 10px -1px;
+    -khtml-box-shadow:rgba(25,25,25,0.7) 0 4px 10px -1px;
+	box-shadow:rgba(25,25,25,0.7) 0 4px 10px -1px;
+}
+
+.buttonReg:hover { background-color:#dbdbdb; }
+.buttonReg:active { background-color:#f7f7f7; margin:19px 24px 0 0; }
+#buttonRegWidth { width:100px; }
+#buttonRememberPwdWidth { width:150px; }
+
+#mailerTextField {
+	height:28px;
+	margin:0 0px 5px 0px;
+	-moz-border-radius:5px; 
+   -webkit-border-radius:5px; 
+	border-radius:5px;
+	border:1px solid #aebed6;
+	padding-left:10px;
+}
+
+.mailerTextFieldID { width:100px; }
+.mailerTextFieldName { width:300px; }
+.mailerTextFieldSubject { width:800px; }
+
+.buttonMailer {
+	width:100px;
+	height:35px;
+	float:right;
+	-moz-border-radius:5px; 
+   -webkit-border-radius:5px; 
+	border-radius:5px;
+	border:1px solid #aebed6;
+	background-color:#f7f7f7;
+	margin:2px 140px 0 0;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-weight:bold;
+	color:#434343;
+}
+
+.buttonMailer:hover { background-color:#e6effe; }
+.buttonMailer:active { background-color:#f7f7f7; margin:3px 139px 0 0; }
+
+.profile_viewer {
+	width:490px;
+	margin:20px;
+	float:left;
+	padding:10px;
+}
+
+#button_resetCookies { margin:10px 0px 0px 0px; !important }
