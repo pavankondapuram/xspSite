@@ -8,6 +8,10 @@ $(function() {
 		$(this).addClass('select');
 	});*/
 
-
+	$('#gallery .item .scrnSht').hide();
+	$('#gallery .item').click(function(){
+		$('#gallery .item .scrnSht').hide();
+		$(this).children('.scrnSht').show();
+	})
 	
 });
