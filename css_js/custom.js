@@ -1,5 +1,5 @@
 $(function() {	
-	//$('#coda-slider-1').codaSlider();  
+	//$('#coda-slider-1').codaSlider(); 
 	jQuery('#parallax').jparallax({
 	});
 	

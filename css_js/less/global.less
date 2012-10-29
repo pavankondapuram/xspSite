@@ -1,0 +1,166 @@
+/***************  |||---@FONT-FACE---|||  *********************/
+@font-face {
+	font-family: 'gudea';
+	font-weight:normal;
+	src: url('../../images/fonts/Gudea-Regular-webfont.eot');
+	src: local('☺'), url('../../images/fonts/Gudea-Regular-webfont.woff') format('woff'), url('../../images/fonts/Gudea-Regular-webfont.ttf') format('truetype'), url('../../images/fonts/Gudea-Regular-webfont.svg#webfontg8dbVmxj') format('svg');
+}
+@font-face {
+	font-family: 'gudea';
+	font-weight:bold;
+	src: url('../../images/fonts/Gudea-Bold-webfont.eot');
+	src: local('☺'), url('../../images/fonts/Gudea-Bold-webfont.woff') format('woff'), url('../../images/fonts/Gudea-Bold-webfont.ttf') format('truetype'), url('../../images/fonts/Gudea-Bold-webfont.svg#webfontg8dbVmxj') format('svg');
+	letter-spacing:1px;
+}
+@font-face {
+	font-family: 'gudea';
+	font-style:italic;
+	src: url('../../images/fonts/Gudea-Italic-webfont.eot');
+	src: local('☺'), url('../../images/fonts/Gudea-Italic-webfont.woff') format('woff'), url('../../images/fonts/Gudea-Italic-webfont.ttf') format('truetype'), url('../../images/fonts/Gudea-Italic-webfont.svg#webfontg8dbVmxj') format('svg');
+}
+
+
+
+/***************  |||---RESET---|||  *********************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+li {
+	list-style:none}
+p {
+	padding:10px 0 0;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+
+
+/***************  |||---GLOBAL---|||  *********************/
+body {
+	font:14px/18px gudea, Arial, Helvetica, sans-serif;
+	text-align:justify;
+	color:#333;
+	background:#333;
+	 
+	h1, h2, h3 {
+		font-family:gudea, Arial, Helvetica, sans-serif;
+		text-shadow: 0px 1px #FFFFFF, 0px 1px 2px #333;
+		font-weight:bold;
+	}
+	h1 {
+		font-size:24px;
+		line-height: 24px;
+	}
+	h2 {
+		font-size:18px;
+		line-height: 18px;
+		margin-top:10px;
+	}
+	h3 {
+		font-size:16px;
+		line-height: 16px;
+	}
+	.bgWrap {
+		background:url(../../images/bgTex.jpg) repeat;
+		overflow:hidden;
+	}
+	.wrapper {
+		width:1000px;
+		margin:20px;
+		float:left;
+		position:relative;
+		z-index:2;
+	}
+	.wrapperBG {
+		background:url(../../images/mainBg.jpg) repeat;
+		box-shadow:0 0 7px #333;
+		opacity: .9;
+		width:1040px;
+		position:relative;
+		z-index:1;
+		overflow:hidden;
+		margin: -30px auto 0;
+	}
+	.header {
+		width:100%;
+		position:relative;
+		z-index:3;
+		box-shadow:0 1px 2px #333333;
+		background: #f8f8f8;
+		background: -moz-linear-gradient(top, #f8f8f8 0%, #eeeeee 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8f8f8), color-stop(100%, #eeeeee));
+		background: -webkit-linear-gradient(top, #f8f8f8 0%, #eeeeee 100%);
+		margin: 0 0 10px 0;
+	}
+	.headCont {
+		width: 92%;
+		margin: 0 5% 0;
+	}
+	.logoPrime {
+		margin:5px 95px 0;
+	}
+	.xsp {
+		background:url(../../images/sprite.png) no-repeat 0 -140px;
+		height: 37px;
+		width: 71px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-size: 300px 1000px;
+	}
+	.logo {
+		background:url(../../images/sprite.png) no-repeat 0px 0px;
+		height: 275px;
+		width: 408px;
+		margin:50px auto 0;
+	}
+	.shadow {
+		background:url(../../images/sprite.png) no-repeat -388px 0px;
+		height: 44px;
+		margin: -24px auto 0;
+		width: 530px;
+	}
+	.cs {
+		color:#55c4c4;
+		width:100%;
+		text-align:center;
+		font-size:40px;
+		margin:20px 0 0;
+	}
+	.greyT {
+		color:#526068;
+	}
+	footer {
+		float:left;
+		clear:both;
+		width:100%;
+		position:relative;
+		z-index:2;
+		background:#333;
+		color:#ccc;
+	}
+	.footCont {
+		position:relative;
+		height: 20px;
+		width:100%;
+		position:relative;
+	}
+	.copyRight {
+		text-align:center;
+		width:100%;
+		margin:5px 0 0;
+	}
+	.needField {
+		width:600px;
+		margin:0 auto;
+		color:red;
+		text-align:center;
+	}
+	.person p {
+		text-align:left;
+	}
+}
