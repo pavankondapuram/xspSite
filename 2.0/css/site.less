@@ -1,10 +1,30 @@
-nav{
-	float: right;
-	ul{
-		li{
+html{
+	font-family:bitter, Verdana, Tahoma, serif;
+	font-size: 14px;
+	color:@grayDark;
+	body{
+		.wrapper{
+			width:80%;
+			margin:0 auto;
+		}
+		nav{
 			float: right;
-			clear: both;
-			border-right: 2px solid @xspGreen;
+			ul{
+				li{
+					float: right;
+					clear: both;
+					border-right: 2px solid #55C4C4;
+					padding: 5px 8px 0px 0;
+					margin: 16px 10px 0 0;
+					font-size: 15px;
+				}
+			}
+		}
+		#home{
+			background: url(../images/homeBG.jpg) no-repeat 50%;
+			.message{
+				font-size:60px;
+			}
 		}
 	}
 }
