@@ -1,5 +1,7 @@
-require(["dojo/window"], function(win){
-   var vs = win.getBox();
-   // vs is an object that is the size of the viewport
-   alert(vs);
+require(["dojo/window","dojo/query","dojo/dom","dojo/NodeList-dom"], function(win,query){
+	var vpSize = win.getBox(),
+   		wrapper = query(".wrapper");
+	console.log(vpSize.h);
+
+	wrapper.style("min-height", vpSize);
 });
