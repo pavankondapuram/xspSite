@@ -1,7 +1,9 @@
-require(["dojo/window","dojo/query","dojo/dom","dojo/NodeList-dom"], function(win,query){
-	var vpSize = win.getBox(),
-   		wrapper = query(".wrapper");
-	console.log(vpSize.h);
+require(["dojo/window","dojo/query","dojo/dom","dojo/NodeList-dom"], 
+	function(win){
+		var vpSize = win.getBox();
 
-	wrapper.style("min-height", vpSize);
+
+		//wrapper = query(".wrapper");
+		dojo.query(".wrapper").style("min-height",vpSize.h);
+		console.log(vpSize.h);
 });
