@@ -1,5 +1,0 @@
-<?php
-
-require('main.php');
-
-?>

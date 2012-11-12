@@ -1,12 +1,27 @@
-require(["dojo/window","dojo/query","dojo/dom-style"],
-	function(win,query,domStyle){
+require(["dojo/window","dojo/query","dojo/dom-style","dojo/on","dojo/dom-geometry","dojo/html"],
+	function(win,query,domStyle,on){
 		var vs = win.getBox(),
-		wrapper = query(".wrapper"),
-		wrapperStyles = domStyle.get(wrapper[0]);
+		wrpHt = vs.h+"px",
+		ftPsn = (vs.h-24)+"px",
+		wrp = query(".wrapper"),
+		footer = query("footer"),
+		wrpStl = domStyle.get(wrp,"min-height"),
+		des = query("nav ul li");
+
 		console.log(vs.h);
-		console.log(wrapper);
-		console.log(wrapperStyles);
-		dojo.style(wrapper[1],"min-height",vs.h+"px");
-		console.log(domStyle.get(wrapper[0]));
+		wrp.forEach(function(wrp){
+			domStyle.set(wrp,"minHeight",wrpHt)
+		});
+
+		domStyle.set(footer[0],"top",ftPsn);
+	
+		/*on(des,"click",function(){
+			alert(this);
+		})*/
+		
+		des.onclick(function(){
+			this.style("display","none");
+		})
+
 	}
 );
