@@ -52,7 +52,7 @@
 		<div id="process">
 			<div class="wrapper"></div>			
 		</div>
-		<div id="gallery">
+		<div id="Gallery">
 			<div class="wrapper"></div>			
 		</div>
 		<div id="contactUs">
