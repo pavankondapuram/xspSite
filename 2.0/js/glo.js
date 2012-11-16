@@ -6,6 +6,7 @@ require(["dojo/window",
 		"dojo/dom",
 		"dojo/html",
 		"dojo/NodeList-manipulate",
+		"dojo/_base/lang",
 		"dojo/domReady!"],
 
 	function(win,query,domStyle,on){
@@ -33,9 +34,9 @@ require(["dojo/window",
 			alert(this);
 		})*/
 		on(des,"click",function(win){
-			var inrCnt = this.innerHTML;
+			var inrCnt = this.innerHTML.trim().toLowerCase();
 
-			win.scrollIntoView(inrCnt);
+			console.log(inrCnt);
 		});
 	}
 );
