@@ -36,7 +36,8 @@ require(["dojo/window",
 		on(des,"click",function(win){
 			var inrCnt = this.innerHTML.trim().toLowerCase();
 
-			console.log(inrCnt);
+			//console.log(inrCnt);
+			location.hash= "#"+inrCnt;
 		});
 	}
 );

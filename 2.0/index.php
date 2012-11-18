@@ -14,6 +14,7 @@
 		</div>
 		<nav>
 			<ul>
+				<li>Home</li>
 				<li>Overview</li>
 				<li>Services</li>
 				<li>Process</li>
@@ -47,16 +48,24 @@
 			</div>
 		</div>
 		<div id="services">
-			<div class="wrapper"></div>			
+			<div class="wrapper">
+				<h2>What we offer</h2>
+			</div>			
 		</div>
 		<div id="process">
-			<div class="wrapper"></div>			
+			<div class="wrapper">
+				<h2>Way we achieve things</h2>
+			</div>			
 		</div>
-		<div id="Gallery">
-			<div class="wrapper"></div>			
+		<div id="gallery">
+			<div class="wrapper">
+				<h2>Show off</h2>
+			</div>			
 		</div>
-		<div id="contactUs">
-			<div class="wrapper"></div>			
+		<div id="contactus">
+			<div class="wrapper">
+				<h2>Utilize us</h2>
+			</div>			
 		</div>
 		<footer>This is the footer</footer>
 		<script src="js/dojo/dojo/dojo.js"></script>
