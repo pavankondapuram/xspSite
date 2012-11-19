@@ -17,12 +17,17 @@ html{
 				li{
 					float: right;
 					clear: both;
-					border-right:3px solid #55C4C4;
+					border-right:3px solid @xspGreen;
 					padding: 5px 8px 0px 0;
 					margin: 16px 10px 0 0;
 					font-size: 15px;
 					cursor:pointer;
+					&.selected{
+						color: @white;
+						background: @xspGreen;
+					}
 				}
+
 			}
 		}
 		#home,#overView,#services,#process,#gallery,#contactUs{
