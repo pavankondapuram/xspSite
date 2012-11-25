@@ -14,12 +14,15 @@ require(["dojo/window",
 	function(win,query,domStyle,on,domClass,fx){
 
 
-		function MyWindow() {
-			this.minHeight = null;
+		function myWindow(minHeight,position) {
+			this.minHeight=null;
+			this.position=null;
 		}
 
-		MyWindow.prototype.move = function () {
-			this.minHeight= win.getBox().h;
+		MyWindow.prototype.minHeightSet = function () {
+			this.forEach(function(){
+				domStyle.set(this,"minHeight",ht);
+			})
 		}
 
 		MyWindow.prototype.moveTo = function (position) {
@@ -27,28 +30,7 @@ require(["dojo/window",
 			this.height = new height;
 		}
 
-
-
-		var window = new MyWindow();
-		window.move();
-
-
-
-		var movinWin = {
-			windw:query(".wrapper"),
-			windwDim:win.getBox(),
-			ht:windwDim.h+"px",
-			ft:query("footer"),
-			ftPsn:(vs.h-24)+"px",
-			trgr:query("nav ul li"),
-		}
-
-		function movinWin(ht){
-
-			this.windw.forEach(function(){
-				domStyle.set(windw,"minHeight",ht);
-			})
-		}
+		var home= new myWindow()
 		
 	}
 );

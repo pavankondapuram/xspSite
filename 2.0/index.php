@@ -69,6 +69,7 @@
 		</div>
 		<footer>This is the footer</footer>
 		<script src="js/dojo/dojo/dojo.js"></script>
-		<script src="js/glo.js" type="text/javascript"></script>
+		<script src="js/fw/jQuery.js"></script>
+		<script src="js/glo_jq.js" type="text/javascript"></script>
 	</body>
 </html>
