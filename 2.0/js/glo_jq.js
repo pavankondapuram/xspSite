@@ -13,8 +13,7 @@ windw.prototype.resize = function(){
 var home = new windw();*/
 
 $(function(){
-	var pos = $(window).innerHeight(),
-		scrlTo = ($(this).index())*pos;
+	var pos = $(window).innerHeight();
 	$(".wrapper").css("min-height",pos+"px");
 
 	$("footer").css("top",pos-28+"px");
@@ -23,8 +22,12 @@ $(function(){
 		$("nav ul li").removeClass("selected");
 		$(this).addClass("selected");
 
-		//$(this).animate("#"+$(this).html().toLowerCase().replace(/\s/g));
-		$(window).animate({scrollTop:scrlTo},'slow');
-		console.log($(this).index());
-	})
+		$("body,html").animate({scrollTop:($(this).index())*pos},300);
+		
+		
+	});
+
+	$(window).scroll(function(){
+		var posss = ($("nav ul li").offset().top);
+	});
 });
