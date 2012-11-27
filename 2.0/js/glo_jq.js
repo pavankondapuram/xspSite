@@ -13,15 +13,18 @@ windw.prototype.resize = function(){
 var home = new windw();*/
 
 $(function(){
-	$(".wrapper").css("min-height",$(window).innerHeight()+"px");
+	var pos = $(window).innerHeight(),
+		scrlTo = ($(this).index())*pos;
+	$(".wrapper").css("min-height",pos+"px");
 
-	$("footer").css("top",($(window).innerHeight())-28+"px");
+	$("footer").css("top",pos-28+"px");
 
 	$("nav ul li").click(function(){
 		$("nav ul li").removeClass("selected");
 		$(this).addClass("selected");
 
-		$(window).scroll("#"+$(this).html().toLowerCase().replace(/\s/g, ''));
-		console.log($(this).html().toLowerCase().replace(/\s/g, ''));
+		//$(this).animate("#"+$(this).html().toLowerCase().replace(/\s/g));
+		$(window).animate({scrollTop:scrlTo},'slow');
+		console.log($(this).index());
 	})
 });
