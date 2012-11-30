@@ -22,9 +22,7 @@ $(function(){
 		$("nav ul li").removeClass("selected");
 		$(this).addClass("selected");
 
-		$("body,html").animate({scrollTop:($(this).index())*pos},300);
-		
-		
+		$("body,html").animate({scrollTop:($(this).index())*pos},300,"swing");
 	});
 
 	$(window).scroll(function(){
