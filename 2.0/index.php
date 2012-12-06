@@ -4,8 +4,9 @@
 		<meta charset="UTF-8">
 		<title>XSP <Xtra Sensory Perception /></title>
 		<link href="images/favIcon.png" rel="shortcut icon">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-		<!-- <meta name="viewport" content="width=device-width; initial-scale=1.0"> -->
+		<link rel="stylesheet" type="text/less" href="css/styles.less">
+		<!-- <link rel="stylesheet" type="text/css" href="css/styles.css">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0"> -->
 	</head>
 	<body>
 		<div id="header">
@@ -33,15 +34,15 @@
 				<p>XSP was founded in mid 2011 to serve the web and mobile industry. We are ambitions to build applications and frameworks to address gaps in web and mobile application design and development. Read below to find about the two founders of XSP.</p>
 				<ul>
 					<li class="xsp">
-						<h2>About XSP</h2>
+						<h3>About XSP</h3>
 						<p>XSP < XtraSensoryPerception ⁄> started as the joint operation between designer and developer. To encompass the proper user experience and functionality of any pretty things on the web, both designer and developer plays the major role to combine and build pretty things.</p>
 					</li>
 					<li class="attributes">
-						<h2>Our attribute</h2>
+						<h3>Our attribute</h3>
 						<p>we build pretty things for the web, no matter whether it’s phone or desktop. Our services are widely differentiated from creative services to full scale back end web application. We adroit to simulate your imagination in sophisticated bending of the rules and formulate a plan to meet your business requirement.</p>
 					</li>
 					<li class="process">
-						<h2>Way we carryout things</h2>
+						<h3>Way we carryout things</h3>
 						<p>We give greatest degree of Special thought for expression that gives importance to project architecture for the point at which the condition is most favourable for Web Design and Development project. We follow the methods to engage in an inquiry and we assure the satisfaction of our customers to the core.</p>
 					</li>
 				</ul>
@@ -71,5 +72,6 @@
 		<script src="js/dojo/dojo/dojo.js"></script>
 		<script src="js/fw/jQuery.js"></script>
 		<script src="js/glo_jq.js" type="text/javascript"></script>
+		<script src="js/fw/less.js" type="text/javascript"></script>
 	</body>
 </html>

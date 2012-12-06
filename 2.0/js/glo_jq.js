@@ -14,7 +14,7 @@ var home = new windw();*/
 
 $(function(){
 	var pos = $(window).innerHeight();
-	$(".wrapper").css("min-height",pos+"px");
+	$(".wrapper").css("min-height",pos-120+"px");
 
 	$("footer").css("top",pos-28+"px");
 
@@ -22,7 +22,7 @@ $(function(){
 		$("nav ul li").removeClass("selected");
 		$(this).addClass("selected");
 
-		$("body,html").animate({scrollTop:($(this).index())*pos},300);
+		$("body,html").animate({scrollTop:($(this).index())*pos},300,"swing");
 		
 		
 	});
