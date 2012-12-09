@@ -8,14 +8,23 @@ html{
 			font-family: robotoThin, ubuntu, Verdana, Tahoma, sans-serif;
 			font-size: 50px;
 		}
+		p{
+			margin-bottom: 15px;
+		}
 		.wrapper{
 			width:80%;
 			margin:0 auto;
 			padding: 60px 20px;
+			overflow:hidden;
 			h3{
 				color: @xspGreen;
-				font-size: 16px;
-				margin:20px 0 10px;
+				font-size: 24px;
+				margin:30px 0 20px;
+			}
+			.webDev{
+				background: url(../images/web.png) no-repeat;
+				height: 370px;
+		   		padding: 80px 0 0 515px;
 			}
 		}
 		nav{
@@ -45,8 +54,19 @@ html{
 		}
 		#home{
 			background: url(../images/homeBG.jpg) no-repeat 50% top;
+			border-bottom: 40px solid @xspGreen;
 			.message{
 				font-size:60px;
+			}
+		}
+		#overview{
+			ul{
+				clear: both;
+				li{
+					float:left;
+					margin: 0 65px 0 0;
+    				width: 26%;
+				}
 			}
 		}
 		footer{
