@@ -30,6 +30,7 @@
 		</div>
 		<div id="overview">
 			<div class="wrapper">
+				<h2>What we do</h2>
 				<div class="webDev">
 					<p>We are formulated to elite a desired solution to corporate and individual clients. We are leading Web 2.0 firm delivering highly creative, brand-driven and result focused web solution. The Internet and web technology prospect is forever evolving, the demand for high-impact experiences rises to new levels, as we constantly strive to achieve lasting impressions for our clients.</p>
 					<p>XSP was founded in mid 2011 to serve the web and mobile industry. We are ambitions to build applications and frameworks to address gaps in web and mobile application design and development. Read below to find about the two founders of XSP.</p>
@@ -68,11 +69,12 @@
 		<div id="contactus">
 			<div class="wrapper">
 				<h2>Utilize us</h2>
-			</div>			
+			</div>
 		</div>
 		<footer>This is the footer</footer>
 		<script src="js/dojo/dojo/dojo.js"></script>
 		<script src="js/fw/jQuery.js"></script>
+		<script src="js/fw/jqueryScroll.js"></script>
 		<script src="js/glo_jq.js" type="text/javascript"></script>
 		<script src="js/fw/less.js" type="text/javascript"></script>
 	</body>

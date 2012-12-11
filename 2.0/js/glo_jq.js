@@ -19,11 +19,15 @@ $(function(){
 	$("footer").css("top",pos-28+"px");
 
 	$("nav ul li").click(function(){
+
+		var clicked = $(this).html().toLowerCase().replace(/\s/g, '');
+
 		$("nav ul li").removeClass("selected");
 		$(this).addClass("selected");
 
-		$("body,html").animate({scrollTop:($(this).index())*pos},300,"swing");
+		//$("body,html").animate({scrollTop:($(this).index())*pos},300,"swing");
 		
+		console.log(clicked);//$("body,html").scrollTo($(clicked),{duration:300});
 		
 	});
 
