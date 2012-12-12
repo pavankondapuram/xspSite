@@ -12,6 +12,11 @@ windw.prototype.resize = function(){
 
 var home = new windw();*/
 
+/*$(function()
+{
+	$('body').jScrollPane();
+});*/
+
 $(function(){
 	var pos = $(window).innerHeight();
 	$(".wrapper").css("min-height",pos-120+"px");
@@ -27,11 +32,14 @@ $(function(){
 
 		//$("body,html").animate({scrollTop:($(this).index())*pos},300,"swing");
 		
-		console.log(clicked);//$("body,html").scrollTo($(clicked),{duration:300});
+		//console.log(clicked);//$("body,html").scrollTo($(clicked),{duration:300});
+		$("body,html").scrollTo("#"+clicked, 800);
 		
 	});
 
 	$(window).scroll(function(){
-		var posss = ($("nav ul li").offset().top);
+		//var posss = ($("nav ul li").offset().top);
+		var posss = scrollTo();
+		console.log(posss);
 	});
 });
