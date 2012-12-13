@@ -19,9 +19,9 @@ var home = new windw();*/
 
 $(function(){
 	var pos = $(window).innerHeight();
-	$(".wrapper").css("min-height",pos/*-120+"px"*/);
+	$(".wrapper").css("min-height",pos);
 
-	$("footer").css("top",pos-28+"px");
+	$("footer").css("top",pos-26+"px");
 
 	$("nav ul li").click(function(){
 
@@ -33,199 +33,47 @@ $(function(){
 		//$("body,html").animate({scrollTop:($(this).index())*pos},300,"swing");
 		
 		//console.log(clicked);//$("body,html").scrollTo($(clicked),{duration:300});
-		$("body,html").scrollTo("#"+clicked, 800);
+		$("body,html").scrollTo("#"+clicked, 600);
 		
 	});
 
 	$(window).scroll(function(){
 		//var posss = ($("nav ul li").offset().top);
-		var posss = scrollTo();
-		console.log(posss);
+		//var posss = scrollTo();
+		//console.log(posss);
 	});
 });
 
 
-(function() {
-    var lastTime = 0;
-    var vendors = ['ms', 'moz', 'webkit', 'o'];
-    for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
-        window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
-        window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] 
-                                   || window[vendors[x]+'CancelRequestAnimationFrame'];
-    }
- 
-    if (!window.requestAnimationFrame)
-        window.requestAnimationFrame = function(callback, element) {
-            var currTime = new Date().getTime();
-            var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-            var id = window.setTimeout(function() { callback(currTime + timeToCall); }, 
-              timeToCall);
-            lastTime = currTime + timeToCall;
-            return id;
-        };
- 
-    if (!window.cancelAnimationFrame)
-        window.cancelAnimationFrame = function(id) {
-            clearTimeout(id);
-        };
-}());
+//contact form validation
 
-var Nodes = {
-
-  // Settings
-  density: 6,
-  reactionSensitivity: 3,
-
-  points: [],
-  lines: [[], []],
-  mouse: { x: -1000, y: -1000, down: false },
-
-  animation: null,
-
-  canvas: null,
-  context: null,
-
-  init: function() {
-    // Set up the visual canvas 
-    this.canvas = document.getElementById( 'stripes' );
-    this.context = this.canvas.getContext( '2d' );
-    this.context.lineJoin = 'bevel';
-    this.canvas.width = window.innerWidth;
-    this.canvas.height = window.innerHeight;
-    this.canvas.style.display = 'block'
-
-    this.canvas.addEventListener('mousemove', this.mouseMove, false);
-    this.canvas.addEventListener('mousedown', this.mouseDown, false);
-    this.canvas.addEventListener('mouseup',   this.mouseUp,   false);
-    this.canvas.addEventListener('mouseout',  this.mouseOut,  false);
-
-    window.onresize = function(event) {
-      Nodes.canvas.width = window.innerWidth;
-      Nodes.canvas.height = Math.max(window.innerHeight, 670);
-      Nodes.onWindowResize();    
-    }
-
-    this.preparePoints();
-    this.draw();
-    
-  },
-
-  preparePoints: function() {
-
-    // Clear the current points
-    this.points = [];
-    this.lines = [[],[]];
-    
-    var width, height, i;
-    var center = window.innerHeight / 2;
-
-    for( i = -10; i < this.canvas.width + 10; i += this.density ) {
-
-      var line1 = {y: center - 17, originalY: center - 10, color: '#B1FB17'};
-      var line2 = {y: center - 17, originalY: center - 25, color: '#F52887'};
-
-      line1["x"] =  i;
-      line1["originalX"] = i;
-      
-      line2["x"] =  i;
-      line2["originalX"] = i;
-      
-      this.points.push(line1);
-      this.points.push(line2);
-      
-      this.lines[0].push(line1);
-      this.lines[1].push(line2);
-    }
-  },
-
-  updatePoints: function() {
-
-    var i, currentPoint, theta, distance;
-    
-    for (i = 0; i < this.points.length; i++ ){
-
-      currentPoint = this.points[i];
-
-      theta = Math.atan2( currentPoint.y - this.mouse.y, currentPoint.x - this.mouse.x);
-
-      if ( this.mouse.down ) {
-        distance = this.reactionSensitivity * 300 / Math.sqrt((this.mouse.x - currentPoint.x) * (this.mouse.x - currentPoint.x) +
-         (this.mouse.y - currentPoint.y) * (this.mouse.y - currentPoint.y));
-      } else {
-        distance = this.reactionSensitivity * 150 / Math.sqrt((this.mouse.x - currentPoint.x) * (this.mouse.x - currentPoint.x) +
-         (this.mouse.y - currentPoint.y) * (this.mouse.y - currentPoint.y));  
+$(document).ready(function(){
+    $("#myform").validate({
+      debug: false,
+      rules: {
+        name: "required",
+        contact_no: { 
+                required:true,
+                number:true
+        },
+        email: {
+          required: true,
+          email: true
+        },
+        message: "required"
+      },
+      messages: {
+        name: "Please let us know who you are",
+        contact_no: "Please provide your contact number",
+        email: "A valid email will help us get in touch with you",
+        message: "Pleasge enter a message",
+      },
+      submitHandler: function(form) {
+        // do other stuff for a valid form
+        $.post('admin/cu-core-functions.php', $("#myform").serialize(), function(data) {
+          $('#results').html(data);
+          document.getElementById('myform').reset();
+        });
       }
-      
-      currentPoint.x += Math.cos(theta) * distance + (currentPoint.originalX - currentPoint.x) * 0.07;
-      currentPoint.y += Math.sin(theta) * distance + (currentPoint.originalY - currentPoint.y) * 0.07;
-
-    }
-  },
-
-  drawPoints: function() {
-
-    var i, currentPoint;
-
-    for (i = 0; i < 2; i++) {
-      var line = this.lines[i];
-      this.context.beginPath();
-      this.context.lineJoin = 'round';
-      this.context.moveTo( line[0].x, line[0].y);
-      this.context.strokeStyle = line[0].color;
-      this.context.lineWidth = 10;
-      for (var j = 1; j < line.length - 2; j++) {
-        var point = line[j];
-
-        var xc = (point.x + line[j + 1].x) / 2;
-        var yc = (point.y + line[j + 1].y) / 2;
-
-        this.context.quadraticCurveTo(point.x, point.y, xc, yc);
-
-      }
-      this.context.stroke();
-      this.context.closePath();
-    }
-  },
-
-  draw: function() {
-    this.animation = requestAnimationFrame( function(){ Nodes.draw() } );
-
-    this.clear();
-    this.updatePoints();
-    this.drawPoints();
-
-  },
-
-  clear: function() {
-    this.canvas.width = this.canvas.width;
-  },
-
-  mouseDown: function( event ){
-    Nodes.mouse.down = true;
-  },
-
-  mouseUp: function( event ){
-    Nodes.mouse.down = false;
-  },
-  
-  mouseMove: function(event){
-    Nodes.mouse.x = event.pageX;
-    Nodes.mouse.y = event.pageY;
-  },
-  
-  mouseOut: function(event){
-    Nodes.mouse.x = -1000;
-    Nodes.mouse.y = -1000;
-    Nodes.mouse.down = false;
-  },
-
-  // Resize and redraw the canvas.
-  onWindowResize: function() {
-    cancelAnimationFrame( this.animation );
-    this.preparePoints();
-    this.draw();
-  }
-
-}
-    
-Nodes.init();
+    });
+  });
