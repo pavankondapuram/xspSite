@@ -7,6 +7,7 @@ html{
 		h2{
 			font-family: robotoThin, ubuntu, Verdana, Tahoma, sans-serif;
 			font-size: 50px;
+			padding: 60px 0 0;
 		}
 		p{
 			margin-bottom: 15px;
@@ -14,7 +15,6 @@ html{
 		.wrapper{
 			width:80%;
 			margin:0 auto;
-			padding: 60px 20px;
 			overflow:hidden;
 			h3{
 				color: @xspGreen;
@@ -24,7 +24,12 @@ html{
 			.webDev{
 				background: url(../images/web.png) no-repeat;
 				height: 370px;
-		   		padding: 80px 0 0 515px;
+		   		padding: 40px 0 0 515px;
+			}
+			canvas#stripes{
+				position: absolute;
+				left: 0;
+				z-index: 0;
 			}
 		}
 		nav{
@@ -32,6 +37,7 @@ html{
 			position: fixed;
 			top:10px;
 			right:10px;
+			z-index: 1000;
 			ul{
 				li{
 					float: right;
