@@ -109,7 +109,7 @@
 				</div>
 			</div>
 		</div>
-		<footer>© Copy Rights reserved - XSP Xtra Sensory Perception</footer>
+		<footer>This is the footer</footer>
 		<script src="js/dojo/dojo/dojo.js"></script>
 		<script src="js/fw/jQuery.js"></script>
 		<script src="js/fw/jqueryScrollTo.js"></script>
